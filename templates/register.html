@@ -1,0 +1,44 @@
+<!Docment Type html>
+<html   lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wwidth=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA compatible" content="ie=edge">
+        <title>Registration Page</title>
+
+    </head>
+    <body bgcolor='grey'>
+        <form action='register' method='POST'>
+
+            <!Docment Type html>
+<html   lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wwidth=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA compatible" content="ie=edge">
+        <title>Login Page</title>
+
+    </head>
+    <body bgcolor='grey'>
+        <h2> Please fill up the form for Registration:</h2>
+        <form action='register' method='POST'>
+            {% csrf_token %}
+            
+            <input type='text' name='first_name' placeholder='First Name'><br><br>
+            <input type='text' name='last_name' placeholder='Last Name'><br><br>
+            <input type='text' name='email' placeholder='Email Address'><br><br>
+            <input type='username' name='username' placeholder='username'><br><br>
+            <input tpye='password' name='password1' placeholder='password'><br><br>
+            <input tpye='password' name='password2' placeholder='Retype password'><br><br>
+            <input type='Submit'><br><br>
+        </form>
+        
+        <div>
+            {% for msg in messages %}
+            <h3> {{msg}} </h3>
+            {% endfor %}
+        </div>
+    </body>
+</html>
+
+   
