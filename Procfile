@@ -1,1 +1,1 @@
-web: python ProjectTravello/manage.py runserver 47.15.177.135:$PORT
+web: python https://github.com/sandip-python/ProjectTravello/manage.py runserver 47.15.177.135:$PORT
