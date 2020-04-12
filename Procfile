@@ -1,1 +1,1 @@
-web:ProjectTravello.wsgi --log-file-
+web: python ProjectTravello/manage.py runserver 47.15.177.135:$PORT
